@@ -8,6 +8,7 @@
 
 #import "EchoViewController.h"
 #import "EchoTableViewCell.h"
+#import "DCWKWebViewController.h"
 
 @interface EchoViewController ()
 <UITableViewDataSource,
@@ -40,6 +41,8 @@ UITableViewDelegate>
 #pragma mark - UITableViewDelegate Methods
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DCWKWebViewController * vc = [[DCWKWebViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - getters
 - (UITableView *)tableView {

@@ -1,3 +1,4 @@
+source 'https://cocoapods-cdn.netlify.app/'
 platform :ios, '9.0'
 
 target 'EchoDemo' do
